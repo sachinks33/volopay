@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-size: 11px;
+    line-height: 1.6;
+}
+body{
+    background-color: #3f406c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    background-color: #52557e;
+    height: 45px;
+}
+.brand{
+    display: flex;
+    margin-left: 45px;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-start;
+    float: left;
+}
+
+/* logo */
+.icon{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.icon div{
+    background-color: #ffff;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+.icon div:nth-child(1){
+    padding: 5px;
+}
+.icon div:nth-child(2){
+    padding: 3px;
+}
+.icon div:nth-child(3){
+    padding: 1px;
+}
+/* logo */
+
+.title h5{
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+/* nav subscribe */
+.subscribe{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;   
+}
+.subscribe form{
+    display: inherit;
+}
+.subscribe form input{
+    background-color: #5a5f89;
+    width: 300px;
+    padding: 0px 25px;
+    float: left;
+    border: none;
+    border-radius: 0px;
+}
+.subscribe form input::selection{
+    background-color: #5a5f89;
+    border: none;
+    border-radius: 0px;
+}
+.subscribe form input::placeholder{
+    color: #b3b6ce;
+}
+.subscribe form button{
+    border: none;
+    background-color: #a88cd9;
+    color: #ffff;
+    width: 50px;
+}
+.subscribe form button:hover{
+    cursor: pointer;
+    background-color: #9a7dcc;
+}
+/* nav subscribe */
+
+/* Sections */
+section{
+    padding: 50px 100px
+}
+.row{
+    display:flex;
+}
+.col-1{
+    width: 25%;
+}
+.col-2{
+    width: 50%;
+}
+.col-3{
+    width: 75%;
+}
+.card{
+    margin: 3px;
+}
+.card-img{
+    width: auto;
+    height: 167px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card-img h3{
+    padding-top: 30px;
+    color: #ffff;
+    text-align: center;
+    font-weight: 100;
+}
+.card-content{
+    background-color: #5a5f89;
+    padding: 25px 20px;
+    overflow: hidden;
+}
+.card-height{
+    height: 342.5px;
+    padding-top: 50px;
+}
+.card-height h2{
+    margin: 15px 0px;
+    color: #ffff;
+}
+.card-height button{
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: #aa8ed9;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    margin: 10px 0px;
+}
+.card-height button:hover{
+    cursor: pointer;
+    background-color: #9a7dcc;
+}
+.card-content h3{
+    color: #ffff;
+    width: 90%;
+    margin: 10px 0px;
+    height: 45px;
+    overflow: hidden;
+}
+.card-content p{
+    text-align: justify;
+    color:#ffff;
+    height:88px;
+    overflow: hidden;
+}
+.card-content span{
+    color: #ada7ce;
+    font-size: 10px;
+}
+.fas{
+    color: #ada7ce;
+}
+.profile-icons{
+    display: flex;
+    margin-top: 15px;
+}
+.profile-icons .icon span{
+    margin:0px 5px;
+}
+.profile-icons .icon i{
+    color: #ada7ce;
+}
+/* Sections */
+
+
+/* responsive */
+
+@media screen and (max-width:767px){
+    .brand{
+        margin-left: 20px;
+    }
+    .subscribe form input{
+        width:150px;
+        padding:0px 15px;
+    }
+    .subscribe form button{
+        width: 40px;
+    }
+    section {
+        padding: 25px 50px;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .col-1 {
+        width: 50%;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    .card-img {
+        height: 210px;
+    }
+    .card-height {
+        height: 385px;
+    }
+}
+
+@media screen and (max-width:479px) {
+    nav {
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    .brand {
+        margin-left: 10px;
+    }
+    .subscribe {
+        display: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .subscribe form {
+        width: 100%;
+    }
+    .subscribe form input {
+        width: inherit;
+    }
+    .subscribe form button {
+        width: 50px;
+    }
+    section{
+        padding: 25px 15px;
+    }
+    .card-img {
+        height: 160px;
+    }
+    .card-height {
+        height: 320px;
+    }
+    .col-1,.col-2{
+        width: 100%;
+    }
+}
